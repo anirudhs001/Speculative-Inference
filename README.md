@@ -1,12 +1,12 @@
 
 ### Speculative Inference to speed up LLM inference
 
-<figure align="center">
+<p align='center'>
     <img src="assets/llama_cute.jpg" width="300" height="300"/>
-    <figcaption style="color: grey;">
+    <p align='center' style="color: grey;">
         The cutest image ever from karpathy's repo. I couldn't not have included this.
-    </figcaption>
-</figure>
+    </p>
+</p>
 
 This is my attempt to do speculative inference, purely in C.   
 Built on top of karpathy's [llama2.c]( https://github.com/karpathy/llama2.c )   
