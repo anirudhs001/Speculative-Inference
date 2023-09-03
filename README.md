@@ -1,9 +1,9 @@
 
 ### Speculative Inference to speed up LLM inference
 
-<figure>
+<figure align="center">
     <img src="assets/llama_cute.jpg" width="300" height="300"/>
-    <figcaption>
+    <figcaption style="color: grey;">
         The cutest image ever from karpathy's repo. I couldn't not have included this.
     </figcaption>
 </figure>
@@ -14,7 +14,7 @@ Built on top of karpathy's [llama2.c]( https://github.com/karpathy/llama2.c )
 
 
 ### Running
-Download the model weights from [llama2.c](https://github.com/karpathy/llama2.c). put them in `models/`  
+Download the model weights from [llama2.c]( https://github.com/karpathy/llama2.c ). put them in `models/`  
 Use the same commands as in `llama2.c`:  
 
 `make run`  
@@ -46,7 +46,7 @@ As far as I understand, llama.cpp uses cuda/metal to do step 1 parallelly (by us
 ### What now:
 <ol>
     <li>
-        karpathy says speculative inference works because loading weights from VRAM into on-chip cache is much slower than actually doing the operations.
+        [karpathy says]( https://twitter.com/karpathy/status/1697318534555336961 ) speculative inference works because loading weights from VRAM into on-chip cache is much slower than actually doing the operations.
         <ul>
             <li>
                 if this is true, i can change llama2.c to compute the matrices for all Timesteps serially and then try doing speculative inference.
